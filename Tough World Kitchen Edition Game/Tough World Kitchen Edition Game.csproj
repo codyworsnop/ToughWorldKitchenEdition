@@ -79,15 +79,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\BackButton.cs" />
+    <Compile Include="Assets\scripts\Boss\BossHealthController.cs" />
+    <Compile Include="Assets\scripts\Boss\DamageController.cs" />
+    <Compile Include="Assets\scripts\Boss\HealthController.cs" />
+    <Compile Include="Assets\scripts\Boss\LemonHealthController.cs" />
+    <Compile Include="Assets\scripts\Boss\LetterSpawner.cs" />
     <Compile Include="Assets\scripts\CameraFollow.cs" />
     <Compile Include="Assets\scripts\ClickEventManager.cs" />
     <Compile Include="Assets\scripts\FridgeScene\CharacterMoveFridge.cs" />
     <Compile Include="Assets\scripts\FridgeScene\FallingCookieBehavior.cs" />
     <Compile Include="Assets\scripts\FridgeScene\FinishLineBehavior.cs" />
     <Compile Include="Assets\scripts\FridgeScene\Health.cs" />
-    <Compile Include="Assets\scripts\GetText.cs" />
+    <Compile Include="Assets\scripts\GlobalStrings.cs" />
+    <Compile Include="Assets\scripts\ResetAll.cs" />
     <Compile Include="Assets\scripts\ResizeBackground.cs" />
     <Compile Include="Assets\scripts\SetText.cs" />
+    <Compile Include="Assets\scripts\SpriteChooser.cs" />
+    <Compile Include="Assets\scripts\stoveScene\DaggerCollisionBehaviour.cs" />
     <Compile Include="Assets\scripts\stoveScene\DialController.cs" />
     <Compile Include="Assets\scripts\stoveScene\FlameCollision.cs" />
     <Compile Include="Assets\scripts\stoveScene\PlayerControl.cs" />

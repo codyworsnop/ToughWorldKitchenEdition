@@ -9,8 +9,39 @@ public class SetText : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        text = GameObject.Find("Table").GetComponent<Text>();
-        text.text = PlayerPrefs.GetString("Table", "Traverse the kitchen table to obtain The Butter Dagger of Justice");
+
+        text = GameObject.Find("Fridge").GetComponent<Text>();
+
+        if (PlayerPrefs.GetInt("Fridge") == 1)
+        {
+            text.text = GlobalStrings.FridgeInstructionStrikeThrough;
+        }
+        else
+        {
+            text.text = GlobalStrings.FridgeInstruction;
+        }
+
+        text = GameObject.Find("Stove").GetComponent<Text>();
+
+        if (PlayerPrefs.GetInt("Stove") == 1)
+        {
+            text.text = GlobalStrings.StoveInstructionStrikeThrough;
+        }
+        else
+        {
+            text.text = GlobalStrings.StoveInstruction;
+        }
+
+        text = GameObject.Find("Boss").GetComponent<Text>();
+
+        if (PlayerPrefs.GetInt("Boss") == 1)
+        {
+            text.text = GlobalStrings.CookieInstructionStrikeThrough;
+        }
+        else
+        {
+            text.text = GlobalStrings.CookieInstruction;
+        }
 
     }
 	
