@@ -41,7 +41,7 @@ public class ClickEventManager : MonoBehaviour {
             {
                 SceneManager.LoadScene(SceneName);
             }
-            else if (!(PlayerPrefs.GetInt("Fridge") == 1) && !(PlayerPrefs.GetInt("Stove") == 1))
+            else if (!(PlayerPrefs.GetInt("Fridge") == 1) || !(PlayerPrefs.GetInt("Stove") == 1))
             {
                 SceneManager.LoadScene("blackboardScene");
             }

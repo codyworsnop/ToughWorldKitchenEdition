@@ -87,11 +87,13 @@
     <Compile Include="Assets\scripts\Boss\LetterSpawner.cs" />
     <Compile Include="Assets\scripts\CameraFollow.cs" />
     <Compile Include="Assets\scripts\ClickEventManager.cs" />
+    <Compile Include="Assets\scripts\EraseOnStart.cs" />
     <Compile Include="Assets\scripts\FridgeScene\CharacterMoveFridge.cs" />
     <Compile Include="Assets\scripts\FridgeScene\FallingCookieBehavior.cs" />
     <Compile Include="Assets\scripts\FridgeScene\FinishLineBehavior.cs" />
     <Compile Include="Assets\scripts\FridgeScene\Health.cs" />
     <Compile Include="Assets\scripts\GlobalStrings.cs" />
+    <Compile Include="Assets\scripts\Hotkeys.cs" />
     <Compile Include="Assets\scripts\ResetAll.cs" />
     <Compile Include="Assets\scripts\ResizeBackground.cs" />
     <Compile Include="Assets\scripts\SetText.cs" />
