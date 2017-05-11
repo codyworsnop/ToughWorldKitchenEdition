@@ -7,7 +7,8 @@ public class ClickEventManager : MonoBehaviour {
 
     public string SceneName;
     public Texture2D CursorTexture;
-    public bool ChangingScenes; 
+    public bool ChangingScenes;
+    public bool IsBossScene; 
 
     private bool _sceneLoading;
 
@@ -36,7 +37,18 @@ public class ClickEventManager : MonoBehaviour {
 
         if (ChangingScenes)
         {
-            SceneManager.LoadScene(SceneName);
+            if (!IsBossScene)
+            {
+                SceneManager.LoadScene(SceneName);
+            }
+            else if (!(PlayerPrefs.GetInt("Fridge") == 1) && !(PlayerPrefs.GetInt("Stove") == 1))
+            {
+                SceneManager.LoadScene("blackboardScene");
+            }
+            else
+            {
+                SceneManager.LoadScene("bossScene");
+            }
         }
     }
 }
