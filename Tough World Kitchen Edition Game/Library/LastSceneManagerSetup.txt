@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/scenes/fridgeScene.unity
+- path: Assets/scenes/SplashScreens/StoveSplashScreen.unity
   isLoaded: 1
   isActive: 1
